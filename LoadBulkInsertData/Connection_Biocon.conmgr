@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Connection_Biocon"
+  DTS:DTSID="{05955A34-BC71-43E9-B94D-F67718B687EC}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::Connection_Biocon_ConnectionString]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=Biocon;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-LoadBulkInsertData-{05955A34-BC71-43E9-B94D-F67718B687EC}LocalHost.Biocon;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
